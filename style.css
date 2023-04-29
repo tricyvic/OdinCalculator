@@ -34,13 +34,12 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
 }
-.calculator .top{
-    justify-self: start;
-}
-.calculator .bottom{
-    justify-self: baseline;
+.display > p{
+    text-align: end;
+    flex: 1;
+    font-size: 3pc;
 }
 .calculator .buttons{
     flex: 2;
@@ -59,10 +58,9 @@ body{
     justify-self: end;
 }
 .operators > input{
-    flex: 0.5;
+    flex: 0.25;
 }
 .operators .ie{
     flex: 1;
-    
 }
 

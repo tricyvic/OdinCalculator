@@ -1,6 +1,12 @@
-const firstNumber = 1;
-const secondNumber = 2;
-const operator = "/";
+let firstNumber = '';
+let secondNumber = '';
+let operator = "";
+
+const inputsNumbers = document.querySelectorAll("input")
+
+
+const displayTop = document.querySelector(".top")
+const displayBottom = document.querySelector(".bottom")
 
 const add = (a, b) => a + b;
 const subtract = (a, b) => a - b;
@@ -31,3 +37,19 @@ const operate = (firstNumber, operator, secondNumber) => {
   }
 };
 console.log(operate(firstNumber, operator, secondNumber));
+
+inputsNumbers.forEach(input => {
+  input.addEventListener("click",()=>{
+    firstNumber = firstNumber + input.value;
+    displayTop.innerHTML = firstNumber;
+    return firstNumber;
+  })
+})
+
+
+
+
+
+
+
+
